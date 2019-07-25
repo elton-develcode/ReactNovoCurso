@@ -4,6 +4,6 @@ import Saudacao from './componentes/Saudacao'
 
 ReactDOM.render(
   <div>
-    <Saudacao />
+    <Saudacao tipo='Saudação' nome='Elton'/>
   </div>
 , document.getElementById('root'))

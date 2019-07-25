@@ -2,13 +2,17 @@ import React, { Component } from 'react'
 
 export default class Saudacao extends Component {
  
-  state = {
-      tipo: 'Teste',
-      nome: 'Teste'
+  constructor(props) {
+    super(props)
+    this.state = {
+      tipo: this.props.tipo,
+      nome: this.props.nome
     }
+    this.atualizarTipo = this.atualizarTipo.bind(this)
+  }
 
-  atualizarTipo(tipo) {
-    this.setState({ tipo })
+  atualizarTipo(e) {
+    this.setState({ tipo : e.target.value })
   }
 
   atualizarNome(nome) {
@@ -21,8 +25,11 @@ export default class Saudacao extends Component {
       <div>
         <h1>{tipo} {nome}!</h1>
         <hr />
-        <input type='text' placeholder='Tipo...' value={tipo} onChange={(e) => this.atualizarTipo(e.target.value)} />
-        <input type='text' placeholder='Nome...' value={nome} onChange={(e) => this.atualizarNome(e.target.value)}/>
+        <input type='text' placeholder='Tipo...'
+          value={tipo} onChange={this.atualizarTipo} />
+        
+        <input type='text' placeholder='Nome...'
+          value={nome} onChange={(e) => this.atualizarNome(e.target.value)} />
       </div>
     )
   }
