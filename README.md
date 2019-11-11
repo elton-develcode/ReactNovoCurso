@@ -31,9 +31,7 @@ Let's say you buy a [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: 
 
 Let's imagine buying an air conditioner.
 
-[Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: has the best professionals and manages the availability and checks the feedback on their services.
-
-This module helps you manage the feedback you can give at the end of your service.
+Leroy Merlin will manage for you the entire work order process, such as the time available to perform the service, the professional qualified to perform the service, service scheduling, types of services provided, among others.
 
 </br></br>
 
