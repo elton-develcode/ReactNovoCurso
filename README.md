@@ -11,15 +11,15 @@ Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instal
 
 </br>
 
-**Why:** Record feedback of service provided.
+**Why:** To manage the internal and external services provided.
 
-**What:** Work Order Feedback.
+**What:** Service Orders.
 </br></br></br>
 
 ## Summary
 </br>
 
-The **Lm-Instala-Core** is a module for managing customer feedback on services provided.
+The **Lm-Instala-Core** manages internal and external service orders allowing tracking of order status, service provider, deadlines.
 
 </br>
 
