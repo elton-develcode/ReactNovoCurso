@@ -214,6 +214,8 @@ You might want to open an issue to discuss something that you believe that shoul
   * :email: Emerson Danieleski - emerson.danieleski@develcode.com.br
   * :email: Gabriel Souza - gsouza@ext.leroymerlin.com.br
   * :email: João P. Grasselli - joao.grasselli@develcode.com.br
+  
+  Feel free to join our team on [**Slack**](https://lminstala.slack.com/signup)
 
   </br></br></br>
 
