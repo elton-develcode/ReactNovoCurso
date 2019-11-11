@@ -91,31 +91,16 @@ file must contain the following structure:
         PRD_KEY_ALIAS=value
         PRD_KEY_PASSWORD=value
 ```
-
+The values must filled according to the configurations of each environment
+6. Add the gooogle-services.json to the project to enable chat functionality
+7. Select a build variant according to your desired environment: local, dev, hom, prd
 </br></br>
 
 ### Running it
 
-1. On terminal type
-```
-mvn clean install -Dmaven.test.skip=true
-```
-
-2. Use as dependent module in other modules.
-
+1.  Run the app. Click Run > Run 'app'. After the project builds you'll be prompted to build or launch an emulator.
 
 </br></br>
-
-## Testing
-
-To run the tests, run the command :pray:
-
-```
-mvn test
-```
-Maven himself is in charge of running the tests and returning the results.
-
-</br>
 
 ## Main Features
 
