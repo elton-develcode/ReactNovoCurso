@@ -1,9 +1,9 @@
 
 <img align="right" width="20%" src="https://github.com/elton-develcode/images/blob/master/logos/logo_instala_146x146.png">
 
-# Lm-Instala-Core
+# Lm-Instala-Util
 
-Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instala** is responsible for managing work orders.
+Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instala** is Module common to other modules.
 
 </br></br>
 
@@ -11,15 +11,15 @@ Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instal
 
 </br>
 
-**Why:** To manage the internal and external services provided.
+**Why:** To facilitate the configuration of some basic parameters common to all modules.
 
-**What:** Service Orders.
+**What:** Module common to other modules.
 </br></br></br>
 
 ## Summary
 </br>
 
-The **Lm-Instala-Core** manages internal and external service orders allowing tracking of order status, service provider, deadlines.
+The **Lm-Instala-util** module common to other modules.
 
 </br>
 
@@ -27,11 +27,7 @@ The **Lm-Instala-Core** manages internal and external service orders allowing tr
 
 </br>
 
-Let's say you buy a [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: product and need to use an installation service.
-
-Let's imagine buying an air conditioner.
-
-Leroy Merlin will manage for you the entire work order process, such as the time available to perform the service, the professional qualified to perform the service, service scheduling, types of services provided, among others.
+This module only complements services used in other modules, such as request handling, basic CRUD, some common environment variable settings.
 
 </br></br>
 
@@ -45,6 +41,8 @@ Leroy Merlin will manage for you the entire work order process, such as the time
   * [Mysql](https://www.mysql.com/) - Database 8+
   * [Docker](https://docs.docker.com/install) - Infrastructure settings 17.06.0+
   * [Docker-compose](https://docs.docker.com/compose/install) - Container orchestrator 1.6.0+
+  * [Node](https://nodejs.org/en) version 6+
+  * [Yarn](https://yarnpkg.com/lang/en/): Manager package
 
 * **Hardware**
   * Core i3 processor or better
@@ -55,112 +53,21 @@ Leroy Merlin will manage for you the entire work order process, such as the time
 
 ### Installing It
 
-1. :octocat: Clone this repository and go to the lm-instala-core folder:
+1. :octocat: Clone this repository and go to the lm-instala-util folder:
  
 
 ```
-git clone https://github.com/leroy-merlin-br/lm-instala-core.git
+git clone https://github.com/leroy-merlin-br/lm-instala-util.git
 
-cd lm-instala-core
+cd lm-instala-util
 ```
 
-</br></br>
 
 ### Configuring It
 
- Settings for docker-compose.yml
+ Its Module common to other modules. 
 
- ##### JWT
-
-   JSON Web Token (JWT) is an industry-standard RCT 7519 method for performing two-party authentication through a signed token that   authenticates a web request. This token is a Base64 code that stores JSON objects with data that allows request authentication.
- ```
-  JWT_SECRET = {jwt_secret}
- ```
-
- ##### DB_URL
-
-  Is the required JDBC String to connect to mysql database with java or the mysql workbench tool too.
- ```
-  DB_URL = jdbc:mysql://{ip}:{port}/{db_schema}
- ```
-
- ##### DB_USER
-
-  Parameter required for database access authorization.
-  ```
-   DB_USER = {username}
-  ```
-
- ##### DB_PASSWORD
-
- Parameter required for database access authorization.
- ```
-  DB_PASSWORD = {password}
- ```
-
- ##### MAIL_HOST
-
- Parameter required for authorization to access the deploy platform.
- ```
-  MAIL_HOST = {mail_host}
- ```
-
- ##### MAIL_PORT
-
- Parameter required for authorization to access the deploy platform.
- ```
-  MAIL_PORT = {mail_port}
- ```
-
- ##### MAIL_USER
-
- Parameter required for authorization to access the deploy platform.
- ```
-  MAIL_USER = {mail_user}
- ```
-
- ##### MAIL_PASSWORD
-
- Parameter required for authorization to access the deploy platform.
- ```
-  MAIL_PASSWORD = {mail_password}
- ```
- :bangbang: Where {ip}, {port}, {db_schema}, {username}, {password}, {mail_host}, {mail_port}, {mail_user} and
-{mail_password} must be replaced with actual database and mail values.
-
- Example for docker-compose.yml:
-</br>
-```
- version: '3.1'
- services:
-   web:
-     build:
-       context: .
-       dockerfile: Dockerfile
-       args:
-         PARAM: argument
-     container_name: name_for_container_docker
-     ports:
-       - 8089:8080
-     environment:
-       DB_URL: jdbc:mysql://db_url:3306/database
-       DB_USER: user
-       DB_PASSWORD: password
-       JWT_SECRET: token
-       MAIL_HOST: email@email.com
-       MAIL_PORT: 123
-       MAIL_USER: User
-       MAIL_PASSWORD: password
-       API_INSTALA: http://localhost:8086/lm-instala-api
-       API_INSTALA_PDP: http://localhost:8087/lm-instala-provider
-       API_INSTALA_AUTH: http://localhost:8086/lm-instala-api
-       API_INSTALA_PARAM: http://localhost:8089/lm-instala-parameters
-       API_INSTALA_I18N: http://localhost:8086/lm-instala-api
-       API_INSTALA_SATSFTN: http://localhost:8086/lm-instala-rating
-       API_KEY: key
-```
- :warning:  Important file identification
-
+ 
 </br></br>
 
 ### Running it
@@ -170,15 +77,7 @@ cd lm-instala-core
 mvn clean install -Dmaven.test.skip=true
 ```
 
-2. Use docker-compose to start :
-
-```
-docker-compose up --build
-```
-> Check in the docker-compose.yml file what port will be exposed on your host and ensure that they are not already used.
-
-When all components are started, you can access the app at :
-* **http://localhost:8086**
+2. Use as dependent module in other modules.
 
 
 </br></br>
@@ -197,9 +96,10 @@ Maven himself is in charge of running the tests and returning the results.
 ## Main Features
 
 - Authentication
-- Service Order CRUD
-- Service Group Search
-- Download App
+- Abstration Rest Request
+- Time Zone configuration
+- Amazon configuration
+- SMS, Google and more configurations
 
 </br></br>
 
