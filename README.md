@@ -211,9 +211,9 @@ You might want to open an issue to discuss something that you believe that shoul
 
  ## Maintainers
 
-  * [ :email: Emerson Danieleski - emerson.danieleski@develcode.com.br](emerson.danieleski@develcode.com.br)
-  * [ :email: Gabriel Souza - gsouza@ext.leroymerlin.com.br](gsouza@ext.leroymerlin.com.br)
-  * [ :email: João P. Grasselli - joao.grasselli@develcode.com.br](joao.grasselli@develcode.com.br)
+  * :email: Emerson Danieleski - emerson.danieleski@develcode.com.br
+  * :email: Gabriel Souza - gsouza@ext.leroymerlin.com.br
+  * :email: João P. Grasselli - joao.grasselli@develcode.com.br
 
   </br></br></br>
 
