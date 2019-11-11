@@ -69,12 +69,9 @@ cd lm-instala-android
 
 ### Configuring It
 2. Download the appropriate JDK for your system.
-</br>
 3. Install Android Studio.
-</br>
 4. Import the project. Open Android Studio, click Open an existing Android Studio project and select the project.
 Gradle will build the project.
-</br>
 5. Add a file called signing.properties in the root of the project. The
 file must contain the following structure:
 
