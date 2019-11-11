@@ -1,9 +1,9 @@
 
 <img align="right" width="20%" src="https://github.com/elton-develcode/images/blob/master/logos/logo_instala_146x146.png">
 
-# Lm-Instala-Android
+# Lm-Instala-front
 
-Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instala** is aplication Android.
+Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instala** is front-end application web.
 
 </br></br>
 
@@ -11,16 +11,15 @@ Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instal
 
 </br>
 
-**Why:** This android app is aimed for the Service Agent of the Instala project, allowing him to interact
-with the Field Service Portal through calls to the API Layer.
+**Why:** To facilitate project administration on any type of computer.
 
-**What:** App for the Leroy Merlin Instala project.
+**What:** App Web for the Leroy Merlin Instala project.
 </br></br></br>
 
 ## Summary
 </br>
 
-The **Lm-Instala-Android** is an android app is aimed for the Service Agent of the **Instala** project
+The **Lm-Instala-front** is an web app is aimed for the Service Agent of the **Instala** project
 
 </br>
 
@@ -28,7 +27,7 @@ The **Lm-Instala-Android** is an android app is aimed for the Service Agent of t
 
 </br>
 
-This app is intended for the Instala Project Service Provider, allowing them to interact with the Service Portal through smartphones.
+This web application is designed to facilitate the creation of Project Install work orders, allowing them to interact with the system from any device.
 
 </br></br>
 
@@ -37,69 +36,46 @@ This app is intended for the Instala Project Service Provider, allowing them to 
 ### Getting it
 
 * **Software**
-  * [Java JDK](https://www.oracle.com/technetwork/pt/java/javase/overview/index.html) - Java Development Kit 8+
-  * [Maven](https://maven.apache.org/) - Dependency management 3.3+
-  * [Mysql](https://www.mysql.com/) - Database 8+
-  * [Docker](https://docs.docker.com/install) - Infrastructure settings 17.06.0+
-  * [Docker-compose](https://docs.docker.com/compose/install) - Container orchestrator 1.6.0+
+  
   * [Node](https://nodejs.org/en) version 6+
   * [Yarn](https://yarnpkg.com/lang/en/): Manager package
-  * [Android](https://developer.android.com/?hl=pt-br) SDK version 15+
-  * [Firebase](https://firebase.google.com/?hl=pt-BR) Firebase account
-
+  
 
 * **Hardware**
   * Core i3 processor or better
   * 2Gb Ram (recommended min 4GB)
+  * Browser (recommended Google Chrome)
   * Internet Access (required for Github Login)
 
  </br></br>
 
 ### Installing It
 
-1. :octocat: Clone this repository and go to the lm-instala-android folder:
+1. :octocat: Clone this repository and go to the lm-instala-front folder:
  
 
 ```
-git clone https://github.com/leroy-merlin-br/lm-instala-android.git
+git clone https://github.com/leroy-merlin-br/lm-instala-front.git
 
-cd lm-instala-android
+cd lm-instala-front
 ```
 
 
 ### Configuring It
-2. Download the appropriate JDK for your system.
-3. Install Android Studio.
-4. Import the project. Open Android Studio, click Open an existing Android Studio project and select the project.
-Gradle will build the project.
-5. Add a file called signing.properties in the root of the project. The
-file must contain the following structure:
-
-```
-        DEV_STORE_FILE=value
-        DEV_STORE_PASSWORD="value
-        DEV_KEY_ALIAS=value
-        DEV_KEY_PASSWORD=value
-
-        HOM_STORE_FILE=value
-        HOM_STORE_PASSWORD=value
-        HOM_KEY_ALIAS=value
-        HOM_KEY_PASSWORD=value
-
-        PRD_STORE_FILE=value
-        PRD_STORE_PASSWORD=value
-        PRD_KEY_ALIAS=value
-        PRD_KEY_PASSWORD=value
-```
-The values must filled according to the configurations of each environment
-6. Add the gooogle-services.json to the project to enable chat functionality
-7. Select a build variant according to your desired environment: local, dev, hom, prd
+1. No need to configure anything
 </br></br>
 
 ### Running it
 
-1.  Run the app. Click Run > Run 'app'. After the project builds you'll be prompted to build or launch an emulator.
-
+1. Starting server
+```
+yarn start
+```
+ 2. Building project 
+```
+yarn run build
+```
+ 
 </br></br>
 
 ## Main Features
