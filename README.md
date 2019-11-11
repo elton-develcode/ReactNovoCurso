@@ -194,6 +194,15 @@ mvn test
 ```
 Maven himself is in charge of running the tests and returning the results.
 
+</br>
+
+## Main Features
+
+- Authentication
+- Services and flow configuration
+- Service Order Flow
+- Service Provider ans Crasfstman handling
+
 </br></br>
 
 ## Contributing
