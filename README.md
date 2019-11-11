@@ -3,7 +3,8 @@
 
 # Lm-Instala-Core
 
-Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instala** is responsible for service satisfaction surveys.
+Module in [Leroy Merlin](https://www.leroymerlin.com.br/) :copyright: - **Instala** is responsible for managing work orders.
+
 </br></br>
 
 > Leroy Merlin Brazil  🇧🇷 - Instala Team
