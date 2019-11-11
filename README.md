@@ -78,6 +78,34 @@ yarn run build
  
 </br></br>
 
+## Testing
+
+1.To run the tests, run the command
+
+```
+yarn test
+```
+
+2. Using coverage
+
+```
+yarn test:cov
+```
+</br></br>
+
+## Development
+
+1. Build developer
+```
+yarn run build:dev
+```
+
+2. View dist before deploy
+```
+yarn start:dist
+```
+</br></br>
+
 ## Main Features
 
 - Login as a Service Agent
