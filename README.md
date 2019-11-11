@@ -55,13 +55,13 @@ Leroy Merlin will manage for you the entire work order process, such as the time
 
 ### Installing It
 
-1. :octocat: Clone this repository and go to the lm-instala-satsftn folder:
+1. :octocat: Clone this repository and go to the lm-instala-core folder:
  
 
 ```
-git clone https://github.com/leroy-merlin-br/lm-instala-satsftn.git
+git clone https://github.com/leroy-merlin-br/lm-instala-core.git
 
-cd lm-instala-satsftn
+cd lm-instala-core
 ```
 
 </br></br>
@@ -209,8 +209,8 @@ Reporting bugs or unexpected behavior, and/or non-standard code
 
 You might want to open an issue to discuss something that you believe that should belong to this API or even go ahead and open a Pull Request with your proposal. We have a Continuous Integration server that will make sure that the tests are passing and the coding standard is ok. Also, all pull requests are reviewed :wink:
 
- * [Developers](https://github.com/adeo/lm-instala-parameters/blob/developer/DEVELOPERS.md)
- * [Code of Conduct](https://github.com/adeo/lm-instala-parameters/blob/developer/CODE_OF_CONDUCT.md)
+ * [Developers](https://github.com/adeo/lm-instala-core/blob/developer/DEVELOPERS.md)
+ * [Code of Conduct](https://github.com/adeo/lm-instala-core/blob/developer/CODE_OF_CONDUCT.md)
  * [Contributing](https://github.com/leroy-merlin-br/lm-mobile-api/blob/developer/CONTRIBUTING.md)
 
 
